@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-800 dark:text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md dark:bg-blue-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="font-bold text-xl">Blog</a>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-gray-200">Home</a>
+                <a href="#" class="hover:text-gray-200">About</a>
+                <a href="#" class="hover:text-gray-200">Contact</a>
+            </div>
+            <!-- Dark Mode Toggle Button -->
+            <button id="theme-toggle" class="bg-blue-700 p-2 rounded-md hover:bg-blue-800">
+                Toggle Dark Mode
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-800 text-white py-16 px-8 dark:bg-blue-900">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Blog</h1>
+            <p class="text-xl mb-6">Sharing insights and ideas on technology, development, and design.</p>
+            <a href="#posts" class="bg-blue-600 py-2 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700">Read
+                More</a>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section id="posts" class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Latest Posts</h2>
+
+        <!-- Post 1 -->
+        <div class="mb-12 bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-700">
+            <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">How to Master Web Development</h3>
+                <p class="text-gray-600 text-lg mb-4 dark:text-gray-300">Web development is a versatile and
+                    ever-evolving field. In this post, we explore the steps to becoming a proficient web developer.</p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold dark:text-blue-400">Read More
+                    &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="mb-12 bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-700">
+            <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">The Future of Artificial Intelligence</h3>
+                <p class="text-gray-600 text-lg mb-4 dark:text-gray-300">AI is rapidly changing the landscape of every
+                    industry. In this post, we take a look at how AI will shape the future of work and life.</p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold dark:text-blue-400">Read More
+                    &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="mb-12 bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-700">
+            <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">Understanding UI/UX Design Principles</h3>
+                <p class="text-gray-600 text-lg mb-4 dark:text-gray-300">Good UI/UX design can make or break an
+                    application. In this post, we explore key principles of creating engaging and user-friendly designs.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold dark:text-blue-400">Read More
+                    &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle Script
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark');  // 'dark' sınıfını ekleyip kaldırarak geçişi sağlıyoruz
+        });
+    </script>
+
+</body>
+
+</html>
